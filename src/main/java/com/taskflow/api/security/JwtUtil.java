@@ -13,7 +13,7 @@ import java.util.Date;
 @Component              // Tells Spring: create one instance of this and keep it ready
 public class JwtUtil {
 
-    @Value("${jsw.secret}")
+    @Value("${jwt.secret}")
     private String secret;
 
     @Value("${jwt.expiration}")
