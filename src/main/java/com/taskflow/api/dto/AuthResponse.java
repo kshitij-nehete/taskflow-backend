@@ -7,9 +7,12 @@ import lombok.Data;
 @AllArgsConstructor
 public class AuthResponse {
 
+    private String accessToken;
+    private UserInfo user;
+
     @Data
     @AllArgsConstructor
-    private static class UserInfo {
+    public static class UserInfo {
 
         private String id;
         private String name;
