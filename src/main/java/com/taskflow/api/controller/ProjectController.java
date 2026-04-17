@@ -58,6 +58,7 @@ public class ProjectController {
         }
     }
 
+    @DeleteMapping("{id}")
     public ResponseEntity<ApiResponse<Void>> deleteProject(@PathVariable String id, HttpServletRequest request) {
         try {
             String userId = (String) request.getAttribute("userId");
