@@ -23,6 +23,11 @@ public class ProjectService {
         return projectRepository.findById(id).orElseThrow(() -> new RuntimeException("Project not found"));
     }
 
+    public Project createProject(Project project, String userId)  {
+        project.setCreatedBy(userId);
+        return projectRepository.save(project);
+    }
+
     public Project updateProject(String id, Project updatedProject, String userId) {
         Project existing = projectRepository.findById(id).orElseThrow(() -> new RuntimeException("Project not found"));
 
