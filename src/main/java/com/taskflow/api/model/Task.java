@@ -33,7 +33,7 @@ public class Task {
 
     private String assigneeName;
 
-    private LocalDateTime dueDate;
+    private String dueDate;
 
     @CreatedDate
     private LocalDateTime createdAt;

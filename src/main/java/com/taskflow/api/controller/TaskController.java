@@ -63,7 +63,7 @@ public class TaskController {
         }
     }
 
-    @PostMapping("{id}")
+    @PutMapping("{id}")
     public ResponseEntity <ApiResponse<Task>> updateTask(@PathVariable String id, @RequestBody Task task) {
         try {
             Task updated = taskService.updateTask(id, task);
