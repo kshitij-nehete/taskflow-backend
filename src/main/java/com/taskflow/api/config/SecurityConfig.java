@@ -62,7 +62,7 @@ public class SecurityConfig {
 
         config.setAllowedOrigins(Arrays.asList("http://localhost:4200"));
 
-        config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT", "DELETE", "OPTIONS"));
+        config.setAllowedMethods(Arrays.asList("GET", "POST", "PUT" , "PATCH", "DELETE", "OPTIONS"));
 
         config.addAllowedHeader("*");
 
